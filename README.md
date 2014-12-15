@@ -3,7 +3,6 @@
 Once you have cloned this repo, then please follow the instructions below to continue with the test. If you have any problems or need any help, then please let us know.
 
 ### This is the current datapine frontend test for those wishing to be part of the datapine team ###
-![folger.jpg](https://bitbucket.org/repo/Gy8G5L/images/3023922686-folger.jpg)
 
 ### What is required of me? ###
 Once you clone this repo and successfully loaded the test you will find a static page describing what is required of you. Essentially it boils down to:
