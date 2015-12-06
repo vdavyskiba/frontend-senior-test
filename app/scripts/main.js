@@ -1,29 +1,32 @@
-/*global require*/
-'use strict';
+(function(){
+    'use strict';
 
-require.config({
-    shim: {
-        underscore: {
-            exports: '_'
+    require.config({
+
+        //entry point
+        deps: ['bootstrap'],
+
+        shim: {
+            'angular': {
+                exports: 'angular',
+                deps: [ 'jquery' ]
+            },
+            'angular-route': {
+                deps: [ 'angular' ]
+            },
+            'highcharts': {
+                deps: [ 'jquery' ]
+            }
         },
-        backbone: {
-            deps: [
-                'underscore',
-                'jquery'
-            ],
-            exports: 'Backbone'
-        }
-    },
-    paths: {
-        jquery: '../bower_components/jquery/jquery',
-        backbone: '../bower_components/backbone/backbone',
-        underscore: '../bower_components/underscore/underscore'
-    }
-});
 
-require([
-    'backbone'
-], function (Backbone) {
-    Backbone.history.start();
-    console.log('Hello from Backbone!');
-});
+        paths: {
+            'text': 'bower_components/requirejs-text/text',
+            'domReady': '../bower_components/requirejs-domready/domReady',
+            'jquery': '../bower_components/jquery/dist/jquery.min',
+            'angular': '../bower_components/angular/angular.min',
+            'angular-route': '../bower_components/angular-route/angular-route.min',
+            'highcharts': '../bower_components/highcharts-release/highcharts'
+        }
+    });
+
+})();

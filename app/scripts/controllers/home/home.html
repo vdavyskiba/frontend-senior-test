@@ -1,0 +1,32 @@
+<h3>home</h3>
+
+<p>select a chart to edit:</p>
+
+<div ng-if="model.charts.length"
+     class="chart-list">
+
+    <div class="thumb-block"
+         ng-repeat="chart in model.charts"
+         ng-class="{'selected': isSelected(chart)}"
+         ng-click="onSelect(chart)">
+
+        <chart-thumbnail data="chart"></chart-thumbnail>
+
+        <a ng-href="#/chart/{{chart.chart.type}}">{{chart.chart.type}}</a>
+    </div>
+
+</div>
+
+<form name="form"
+      ng-if="model.current">
+
+    <label>title:</label>
+
+    <input type="text" ng-model="model.current.title.text">
+
+    <label>type:</label>
+
+    <select ng-options="$key for ($key, $val) in model.types" ng-model="model.current.chart.type"></select>
+
+</form>
+

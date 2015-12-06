@@ -1,29 +1,32 @@
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+  background: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
 }
-
-.hero-unit {
-    margin: 45px auto 45px auto;
-    width: 675px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+.menu li {
+  display: inline-block;
 }
-
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.app-host {
+  margin: 50px;
 }
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.chart-list {
+  text-align: center;
+}
+.thumb-block {
+  display: inline-block;
+  margin: 40px;
+  vertical-align: top;
+}
+.thumb-block.selected {
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+}
+.thumb-block img {
+  display: block;
+  width: 150px;
+  height: 100px;
+}
+.widget-chart {
+  width: 80%;
+  margin: auto;
 }
