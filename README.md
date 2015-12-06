@@ -10,7 +10,7 @@ I'm not good in design so i didn't even tried to made one
 
 You can find some other my test and education projects, my commits via my github page https://github.com/vdavyskiba
 
-# datapine frontend test #
+# frontend test #
 
 Once you have cloned this repo, then please follow the instructions below to continue with the test. If you have any problems or need any help, then please let us know.
 
